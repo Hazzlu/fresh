@@ -335,7 +335,6 @@ export function template(opts: TemplateOptions): string {
     h(
       "head",
       null,
-      h("meta", { charSet: "UTF-8" }),
       opts.preloads.map((src) =>
         h("link", { rel: "modulepreload", href: src })
       ),
