@@ -336,10 +336,6 @@ export function template(opts: TemplateOptions): string {
       "head",
       null,
       h("meta", { charSet: "UTF-8" }),
-      h("meta", {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1.0",
-      }),
       opts.preloads.map((src) =>
         h("link", { rel: "modulepreload", href: src })
       ),
