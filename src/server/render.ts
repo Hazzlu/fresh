@@ -345,7 +345,7 @@ export function template(opts: TemplateOptions): string {
     ),
     h("body", { dangerouslySetInnerHTML: { __html: opts.bodyHtml } }),
   );
-  return "<!DOCTYPE html>" + renderToString(page);
+  return renderToString(page);
 }
 
 // Set up a preact option hook to track when vnode with custom functions are
